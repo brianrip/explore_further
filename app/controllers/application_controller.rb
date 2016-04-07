@@ -5,6 +5,7 @@ class ApplicationController < ActionController::Base
   helper_method :current_athlete
 
   def current_athlete
-    @current_athlete ||= Athlete.find_by(id: session[:user_id]) if session[:user_id]
+    @current_athlete ||= Athlete.find_by(uid: session[:user_id]) if session[:user_id]
   end
+
 end

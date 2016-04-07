@@ -11,8 +11,14 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'figaro'
+gem 'faraday'
 gem 'omniauth-strava'
 
+
+group :test do
+  gem 'webmock'
+  gem 'vcr'
+end
 
 
 group :development, :test do
