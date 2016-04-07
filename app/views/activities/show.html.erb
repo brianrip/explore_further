@@ -1,2 +1,6 @@
-<h1>Activities#show</h1>
-<p>Find me in app/views/activities/show.html.erb</p>
+<h1> <%= @activity[:name] %></h1>
+<ul>
+  <% @activity.each do |key, value| %>
+    <li><%= "#{key}: #{value}" %></li>
+  <% end %>
+</ul>
