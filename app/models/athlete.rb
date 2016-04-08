@@ -9,7 +9,6 @@ class Athlete < ActiveRecord::Base
     athlete.profile     = auth_info.extra.raw_info.profile
     athlete.email       = auth_info.extra.raw_info.email
     athlete.token       = auth_info.credentials.token
-    # athlete.save!
 
     athlete
   end

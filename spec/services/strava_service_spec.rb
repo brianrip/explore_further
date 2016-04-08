@@ -1,6 +1,6 @@
 describe ActivityService do
   context '#activities' do
-    it 'returns legislators' do
+    it 'returns activities' do
       VCR.use_cassette 'activity_service#activities' do
         service = ActivityService.new
         activities = service.activities(name: "Tall flowers on the 401")

@@ -3,13 +3,11 @@ class ActivityService
 
   def initialize(token)
     @connection = Faraday.new(url: "https://www.strava.com/api/v3")
-    @connection.headers = { "Authorization" =>  "Bearer #{token}" }
+    @connection.headers = { "Authorization" => "Bearer #{token}" }
   end
 
   def activities
     JSON.parse(connection.get('athlete/activities').body, symbolize_names: true)
   end
-
-private
 
 end
