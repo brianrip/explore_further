@@ -2,11 +2,12 @@ describe ActivityService do
   context '#activities' do
     it 'returns activities' do
       VCR.use_cassette 'activity_service#activities' do
-        service = ActivityService.new
-        activities = service.activities(name: "Tall flowers on the 401")
-        activity = activities.first
+        token = "e1c1964dbe37a42ab8eef6ae96dd07808579ec48"
+        activity_service = ActivityService.new(token)
+        all_activities = activity_service.activities
+        activity = all_activities.first
         expect(activity[:name]).to eq("Turing group jog and circuit training")
-        expect(activities.count).to eq(30)
+        expect(all_activities.count).to eq(30)
       end
     end
   end
