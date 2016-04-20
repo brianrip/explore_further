@@ -1,18 +1,18 @@
 class ActivitiesController < ApplicationController
   def index
-    @activities = activity
+    @activities = activities
   end
 
   def show
-    @activity = activity.find { |activity|
+    @activity = activities.find { |activity|
     activity[:name][params[:id]] }
   end
 
 
 private
 
-  def activity
-    @activity ||= ActivityService.new(current_athlete.token)
+  def activities
+    @activities ||= ActivityService.new(current_athlete.token)
     .activities
   end
 end
