@@ -1,6 +1,21 @@
-<h1><%= current_athlete.firstname %>'s recent activity</h1>
-<% @activities.each do |activity| %>
-  <ul>
-    <li><%= link_to "#{activity[:name]}", activity_path(activity[:name]) %></li>
-  </ul>
-<% end %>
+<div class="container">
+  <h1 class="text-center"><%= current_athlete.firstname %>'s recent activities</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Activity name</th>
+        <th>Details</th>
+        <th>Activity type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @all_activities.each do |activity| %>
+      <tr>
+        <td><%= activity.name %></td>
+        <td><%= link_to "View Details",  activity_path(activity[:name]), class: "btn btn-default" %></td>
+        <td><%= activity.activity_type %></td>
+      <% end %>
+      </tr>
+    </tbody>
+  </table>
+</div>
