@@ -1,15 +1,23 @@
 <div class="container">
-
-<h1 class="text-center"> <%= @activity[:name] %></h1>
-<h1 class="text-center"> <%= @activity[:start_latlng] %></h1>
+  <h1 class="text-center"> <%= @activity[:name] %></h1>
+    <div class="col-md-6">
+      <h4>Location: <%= @activity[:location_city] %>, <%= @activity[:location_state] %></h4>
+      <h4>Activity Type: <%= @activity[:type] %></h4>
+      <h4>Kudos Given: <%= @activity[:kudos_count] %></h4>
+      <h4>Max Speed: <%= @activity[:max_speed] %></h4>
+    </div>
+    <div class="col-md-6">
+      <h4>Distance: <%= @activity[:distance] %></h4>
+      <h4>Moving Time: <%= @activity[:moving_time] %></h4>
+      <h4>Elevation Gain: <%= @activity[:total_elevation_gain] %></h4>
+      <h4>Start Date: <%= @activity[:start_date_local] %></h4>
+      <h4>Strava achievements: <%= @activity[:achievement_count] %></h4>
+    </div>
 <br>
-<ul>
-  <% @activity.each do |key, value| %>
-  <div class="col-md-3">
-    <li><%= "#{key}: #{value}" %></li>
-  </div>
-  <% end %>
-</ul>
+<h3 class="text-center"> <%= @activity[:start_latlng] %></h1>
+  <%# @activity.each do |key, value| %>
+    <%#= "#{key}: #{value}" %>
+  <%# end %>
 </div>
 <br>
 <br>

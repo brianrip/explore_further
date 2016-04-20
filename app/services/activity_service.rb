@@ -7,7 +7,7 @@ class ActivityService
   end
 
   def activities
-    act = JSON.parse(connection.get('athlete/activities').body, symbolize_names: true)
+    JSON.parse(connection.get('athlete/activities').body, symbolize_names: true)
   end
 
 end

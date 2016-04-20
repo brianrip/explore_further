@@ -11,4 +11,5 @@ class Athlete < ActiveRecord::Base
     athlete.save
     athlete
   end
+  
 end
