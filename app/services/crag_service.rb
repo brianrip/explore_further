@@ -8,4 +8,8 @@ class CragService
   def climbing_areas
     JSON.parse(connection.get.body, symbolize_names: true)
   end
+
+  def activity_box()
+
+  end
 end

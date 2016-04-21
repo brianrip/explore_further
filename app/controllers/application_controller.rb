@@ -10,6 +10,4 @@ class ApplicationController < ActionController::Base
     @activities ||= Activity.build_activities(ActivityService.new(current_athlete.token)
     .activities)
   end
-
-
 end

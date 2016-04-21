@@ -20,10 +20,10 @@ group :test do
   gem 'vcr'
 end
 
-
 group :development, :test do
   gem 'rspec-rails'
   gem 'database_cleaner'
+  gem "factory_girl_rails", "~> 4.0"
   gem 'pry'
   gem 'capybara'
   gem 'launchy'
@@ -32,6 +32,7 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
 end
+
 group :production do
   gem 'rails_12factor'
 end
