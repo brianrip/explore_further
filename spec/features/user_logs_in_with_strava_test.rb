@@ -1,5 +1,5 @@
 require 'rails_helper'
-
+include Omnistub
 RSpec.feature "UserLogsInWithSpotify", type: :feature do
   before(:each) do
     stub_user
@@ -8,7 +8,7 @@ RSpec.feature "UserLogsInWithSpotify", type: :feature do
     visit '/'
     expect(page.status_code).to eq(200)
     find("#login").click
-    expect(page).to have_content "brian,s Activities"
+    expect(page).to have_content "Brian,s Activities"
     expect(page).to have_content "rippeto@gmail.com"
     expect(page).to have_content "Logout"
     expect(current_path).to eq "/dashboard"
