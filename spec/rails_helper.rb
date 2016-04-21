@@ -5,8 +5,11 @@ require File.expand_path('../../config/environment', __FILE__)
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'spec_helper'
 require 'rspec/rails'
+require "capybara/rails"
 require 'webmock'
 require 'vcr'
+
+
 
 # Add additional requires below this line. Rails is not loaded until this point!
 
@@ -62,4 +65,22 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  def stub_user
+    OmniAuth.config.test_mode = true
+    OmniAuth.config.mock_auth[:strava] = OmniAuth::AuthHash.new({
+      provider: 'strava',
+      uid: "6032950",
+      extra: {
+        raw_info: {
+          firstname: "brian",
+          lastname: "rippeto",
+          profile: "x",
+          email: "rippeto@gmail.com"
+        }
+      },
+      credentials: {
+        token: "e1c1964dbe37a42ab8eef6ae96dd07808579ec48"
+      }
+      })
+    end
 end
