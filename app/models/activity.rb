@@ -27,6 +27,7 @@ class Activity < ActiveRecord::Base
       activity.achievement_count    = activity_hash[:achievement_count]
       activity.start_latitude       = activity_hash[:start_latitude]
       activity.start_longitude      = activity_hash[:start_longitude]
+      activity.polyline             = activity_hash[:map][:summary_polyline]
       activity.save
       activity
     end
