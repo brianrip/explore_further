@@ -15,23 +15,45 @@
     </div>
 <br>
 <h3 class="text-center"> <%= @activity[:start_latlng] %></h1>
-  <%# @activity.each do |key, value| %>
-    <%#= "#{key}: #{value}" %>
-  <%# end %>
 </div>
 <br>
-<br>
-<div class="col-md-offset-3 col-md-6">
-  <div id='map'>
-  <script>
-  mapboxgl.accessToken = 'pk.eyJ1IjoiYnJpYW5yaXAiLCJhIjoiY2ltcWQ1MXc3MDBpanZsbTRjMGhpdjgycCJ9.q8LWUVvBKZ4OZUeA3L_KAA';
-  var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-      center: [-74.50, 40], // starting position
-      zoom: 9 // starting zoom
-  });
-  L.mapbox.map('map-two', 'mapbox.streets').setView([39.900091, -105.77848], 14);
-  </script>
-  </div>
+<%= javascript_tag do %>
+  function trailMap() {
+
+    var map_options = {
+
+      center: new google.maps.LatLng(<%= @activity[:start_latitude] %>, <%= @activity[:start_longitude] %>),
+      zoom: 13,
+      mapTypeId: google.maps.MapTypeId.TERRAIN,
+      panControl: false,
+      mapTypeControl: false,
+      zoomControlOptions: { position: google.maps.ControlPosition.LEFT_CENTER }
+    };
+
+    var map = new google.maps.Map(document.getElementById("google-map"), map_options);
+
+    var startMarker = new google.maps.Marker({
+      position: { lat: <%= @activity[:start_latitude] %>,
+                  lng: <%= @activity[:start_longitude] %> },
+      map: map,
+      label: "+"
+    });
+
+    var poly = new google.maps.Polyline({
+      geodesic: true,
+      strokeColor: "#EB7001",
+      strokeWeight: 4,
+      map: map
+    });
+
+  };
+<% end %>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS'] %>&callback=trailMap"
+async defer></script>
+
+<div class="card center background-color" style="margin: 20px 10px; height: 575px;">
+  <div id="google-map" style="width: 90%; height: 450px; position: absolute; left: 5%; top: 10%;"></div>
 </div>
+
+<div class="space"></div>
