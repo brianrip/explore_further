@@ -12,11 +12,11 @@ class ActivityBox
     start_lat = @activity.start_latitude
     start_long = @activity.start_longitude
 
-    n = (start_long + distance)
-    s = (start_long - distance)
-    e = (start_lat + distance)
-    w = (start_lat - distance)
+    s = (start_lat - distance)
+    e = (start_long - distance)
+    n = (start_lat + distance)
+    w = (start_long + distance)
 
-    [n, s, e, w]
+    [s, e, n, w]
   end
 end

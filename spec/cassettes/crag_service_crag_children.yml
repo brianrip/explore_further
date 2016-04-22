@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.thecrag.com/api/area/id/14375143/children
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Cdata-Key:
+      - key=9z6lwrevp5f4ev4r
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 22 Apr 2016 00:22:52 GMT
+      Server:
+      - Apache/2.2
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1278'
+      Content-Type:
+      - application/json; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"query":{"request":"id","entity":"area","arg":"children","id":"14375143"},"data":[{"urlAncestorStub":"united-states/flatirons","locatedness":404,"asciiName":"Central
+        Flatirons","redirectStubs":[],"gbRoutes":[0,26,21,11,2,0],"displayAverageHeight":[87,"m"],"subType":"Area","ascentCount":"8","gbAscents":[0,4,3,1,0,0],"geometry":{"point":["-105.29030248671","39.98185653936"],"bbox":["-105.2966978","39.97835","-105.2843168","39.9858215"],"boundary":[[[-105.2888839,39.97835],[-105.2843168,39.9792613],[-105.2876856,39.9858215],[-105.2961399,39.9833389],[-105.2966978,39.9822537],[-105.2950297,39.9797151],[-105.2911675,39.9797151],[-105.2888839,39.97835]]],"lat":"39.98185653936","long":"-105.29030248671","areasize":528400},"id":"16616125","name":"Central
+        Flatirons","styles":[{"style":"Unknown","label":"Unknown","total":63},{"style":"Aid","label":"Aid","total":"1"}],"averageHeight":[87,"m"],"numberRoutes":"64","depth":"7","kudos":"13","subAreaCount":22,"type":"area"},{"urlAncestorStub":"united-states/flatirons","locatedness":223,"asciiName":"Third
+        Flatiron Area","redirectStubs":[],"gbRoutes":[0,14,44,25,4,0],"displayAverageHeight":[150,"m"],"subType":"Area","ascentCount":"22","gbAscents":[0,14,8,0,0,0],"geometry":{"point":["-105.29294396054","39.98688578928"],"bbox":["-105.2966764","39.9852165","-105.2898958","39.9886361"],"boundary":[[[-105.2966764,39.9870414],[-105.2898958,39.9886361],[-105.2898958,39.9864989],[-105.2952173,39.9852165],[-105.2966764,39.9870414]]],"lat":"39.98688578928","long":"-105.29294396054","areasize":123072},"id":"16616149","name":"Third
+        Flatiron Area","styles":[{"style":"Unknown","label":"Unknown","total":86},{"style":"Aid","label":"Aid","total":"2"}],"averageHeight":[152,"m"],"numberRoutes":"88","depth":"7","kudos":"127","subAreaCount":4,"type":"area","maxPop":24},{"urlAncestorStub":"united-states/flatirons","locatedness":233,"asciiName":"Second
+        Flatiron Area","redirectStubs":[],"gbRoutes":[0,3,12,16,7,0],"displayAverageHeight":[10,"m"],"subType":"Area","ascentCount":"40","gbAscents":[0,8,14,13,2,0],"geometry":{"point":["-105.29271030000","39.98954935034"],"bbox":["-105.29408","39.9886618","-105.2913442","39.9903469"],"boundary":[[[-105.29408,39.9894756],[-105.2927067,39.9886618],[-105.2913442,39.9898044],[-105.2927067,39.9903469],[-105.29408,39.9894756]]],"lat":"39.98954935034","long":"-105.29271030000","areasize":21759},"id":"16616173","name":"Second
+        Flatiron Area","styles":[{"style":"Trad","label":"Trad","gradeBand":[0,1,1,0,0,0],"total":"2"},{"style":"Boulder","label":"Boulder","gradeBand":[0,0,6,15,7,0],"total":"28"},{"style":"Unknown","label":"Unknown","total":8},{"style":"Aid","label":"Aid","total":"1"}],"averageHeight":[10,"m"],"numberRoutes":"39","depth":"7","kudos":"47","subAreaCount":3,"type":"area","maxPop":34},{"urlAncestorStub":"united-states/flatirons","locatedness":296,"asciiName":"First
+        Flatiron Area","numberPhotos":"3","redirectStubs":[],"gbRoutes":[0,14,14,1,0,0],"displayAverageHeight":[160,"m"],"subType":"Crag","ascentCount":"48","gbAscents":[0,13,33,0,0,0],"geometry":{"point":["-105.29347983934","39.99107904058"],"bbox":["-105.2949662","39.9896274","-105.2916617","39.9922906"],"boundary":[[[-105.2949662,39.9903836],[-105.2947516,39.9896274],[-105.2916617,39.9916495],[-105.2931638,39.9922906],[-105.2949662,39.9903836]]],"lat":"39.99107904058","long":"-105.29347983934","areasize":32051},"id":"16616197","name":"First
+        Flatiron Area","styles":[{"style":"Trad","label":"Trad","gradeBand":[0,10,12,1,0,0],"total":"23"},{"style":"Unknown","label":"Unknown","total":6}],"averageHeight":[155,"m"],"numberRoutes":"29","depth":"7","kudos":"212","subAreaCount":4,"type":"area","maxPop":49},{"urlAncestorStub":"united-states/flatirons","locatedness":176,"asciiName":"Gregory
+        Canyon Amphitheater","styles":[{"style":"Unknown","label":"Unknown","total":56}],"name":"Gregory
+        Canyon Amphitheater","numberRoutes":"56","depth":"7","redirectStubs":[],"gbRoutes":[0,28,20,8,0,0],"subType":"Area","gbAscents":[0,0,0,0,0,0],"subAreaCount":8,"geometry":{"point":["-105.29450711880","39.99555929286"],"bbox":["-105.2963492","39.9939574","-105.2917465","39.9967356"],"boundary":[[[-105.2959307,39.9939574],[-105.2963492,39.9962835],[-105.2946647,39.9967356],[-105.292358,39.996152],[-105.2917465,39.9957246],[-105.2959307,39.9939574]]],"lat":"39.99555929286","long":"-105.29450711880","areasize":66659},"id":"16616221","type":"area"},{"urlAncestorStub":"united-states/flatirons","locatedness":2063,"asciiName":"Sacred
+        Cliffs","styles":[{"style":"Boulder","label":"Boulder","gradeBand":[0,0,0,1,0,0],"total":"1"},{"style":"Unknown","label":"Unknown","total":48}],"name":"Sacred
+        Cliffs","numberRoutes":"49","depth":"7","redirectStubs":[],"gbRoutes":[0,1,14,31,4,0],"subType":"Area","gbAscents":[0,0,0,0,0,0],"subAreaCount":3,"id":"16616245","type":"area"}]}'
+    http_version: 
+  recorded_at: Fri, 22 Apr 2016 00:22:52 GMT
+recorded_with: VCR 3.0.1
