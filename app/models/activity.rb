@@ -1,14 +1,5 @@
 class Activity < ActiveRecord::Base
 
-  # def initialize(raw_activity)
-  #   @raw_activity = raw_activity
-  # end
-
-  def self.find_by(activities, params)
-    activities(params).map { |raw_activity|
-    Activity.new(raw_activity)}
-  end
-
   def self.build_activities(activities_hash)
     activities_hash.each do |activity_hash|
       activity = Activity.find_or_create_by(activity_id: activity_hash[:id])

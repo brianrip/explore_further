@@ -1,4 +1,9 @@
 class Athlete < ActiveRecord::Base
+  validates :firstname, presence: true
+  validates :lastname, presence: true
+  validates :email, presence: true
+  validates :token, presence: true
+  validates :uid, presence: true
 
   def self.from_omniauth(auth_info)
     athlete = Athlete.find_or_create_by(uid: auth_info.uid)

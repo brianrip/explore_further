@@ -1,9 +1,9 @@
 module Omnistub
-  def stub_user
+  def stub_athlete
     OmniAuth.config.test_mode = true
     OmniAuth.config.mock_auth[:strava] = OmniAuth::AuthHash.new({
       provider: 'strava',
-      uid: "1234",
+      uid: "6032950",
         extra: {
           raw_info: {
             firstname: "Brian",
@@ -13,7 +13,7 @@ module Omnistub
           }
         },
       credentials: {
-        token: "montana"
+        token: ENV['ATHLETE_TOKEN']
       }
     })
   end

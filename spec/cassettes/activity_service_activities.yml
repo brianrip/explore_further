@@ -25,24 +25,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Fri, 22 Apr 2016 00:10:27 GMT
+      - Sat, 23 Apr 2016 18:08:17 GMT
       Etag:
       - W/"2fc65a2cff047bdebe0462f20aa5b35a"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTZmODVjYmE3NGZhZWI4NWE3YTU5N2UxN2Q5MjQ0OTcwBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--0efa18e1f32f0976f0fee34ab210dffd927b3325;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBkN2I2ZmRlOGVjMjUzMDM0OGJjZDdlZTFhNzVmY2Y1BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a10b0bc66748432e7754c75d0647c09701e54bb0;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - 4bba256f5e7ac4fe0f08040610f325ca
+      - 8783596f4f0dfd7bb4f02048eb69fd7b
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '1,1'
+      - '5,10'
       X-Request-Id:
-      - ad9760599c08e9cad584cf1a0c3129a4
+      - d09b8a97f6c74a1fe82e17e769212549
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -143,5 +143,5 @@ http_interactions:
         America/Denver","start_latlng":[39.972294,-105.242134],"end_latlng":[39.973156,-105.242903],"location_city":"Boulder","location_state":"Colorado","location_country":"United
         States","start_latitude":39.972294,"start_longitude":-105.242134,"achievement_count":6,"kudos_count":2,"comment_count":0,"athlete_count":2,"photo_count":0,"map":{"id":"a299606705","summary_polyline":"ya~rFjbjaScEJYhBdG`@Q}CkEFk@hBjGZCoCkEHBpCzDGJsCkG`Ax@`B`EIn@_Ak@yA}FtAbFfARwCmEFi@~A|GTg@cCuEN]rA|Ft@r@eAs@uAmEFd@|CjDKHuCmGlA|FjAp@qAw@kAwFfAr@`BrDORqCuFdA|@~AdE[l@oAaAeAgELm@zAxFp@x@wAy@cA_ELDzCdFe@S{B}EFs@hAv@lA","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":4.798,"max_speed":7.2,"has_heartrate":false,"elev_high":1684.9,"elev_low":1679.4,"total_photo_count":0,"has_kudoed":false,"workout_type":0}]'
     http_version: 
-  recorded_at: Fri, 22 Apr 2016 00:10:27 GMT
+  recorded_at: Sat, 23 Apr 2016 18:08:18 GMT
 recorded_with: VCR 3.0.1

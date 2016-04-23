@@ -1,5 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Athlete, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it { should validate_presence_of(:firstname) }
+  it { should validate_presence_of(:lastname) }
+  it { should validate_presence_of(:email) }
+  it { should validate_presence_of(:token) }
+  it { should validate_presence_of(:uid) }
 end
