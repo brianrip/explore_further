@@ -25,11 +25,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Sat, 23 Apr 2016 19:41:24 GMT
+      - Sat, 23 Apr 2016 19:42:44 GMT
       Etag:
       - W/"2fc65a2cff047bdebe0462f20aa5b35a"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTVmOTRjZWMyZTIwMGUzM2IyYjViMTc1ZGMyNGI0ZDcxBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a7785f3e5184bfffb34894ff99e38127cf173621;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTI1MWU4M2U0MThjYjZiMzBjODBlZGU4M2YwMTI3ZDdlBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--ace3d6f3e7423b1c75fd8afb61d3a2ad9c5c3d92;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
@@ -40,9 +40,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '3,18'
+      - '4,19'
       X-Request-Id:
-      - 46408eab1f45b80395ed6475535dc336
+      - a84a7e26d23c3bee7afde912a0a13914
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -143,5 +143,5 @@ http_interactions:
         America/Denver","start_latlng":[39.972294,-105.242134],"end_latlng":[39.973156,-105.242903],"location_city":"Boulder","location_state":"Colorado","location_country":"United
         States","start_latitude":39.972294,"start_longitude":-105.242134,"achievement_count":6,"kudos_count":2,"comment_count":0,"athlete_count":2,"photo_count":0,"map":{"id":"a299606705","summary_polyline":"ya~rFjbjaScEJYhBdG`@Q}CkEFk@hBjGZCoCkEHBpCzDGJsCkG`Ax@`B`EIn@_Ak@yA}FtAbFfARwCmEFi@~A|GTg@cCuEN]rA|Ft@r@eAs@uAmEFd@|CjDKHuCmGlA|FjAp@qAw@kAwFfAr@`BrDORqCuFdA|@~AdE[l@oAaAeAgELm@zAxFp@x@wAy@cA_ELDzCdFe@S{B}EFs@hAv@lA","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":4.798,"max_speed":7.2,"has_heartrate":false,"elev_high":1684.9,"elev_low":1679.4,"total_photo_count":0,"has_kudoed":false,"workout_type":0}]'
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 19:41:24 GMT
+  recorded_at: Sat, 23 Apr 2016 19:42:44 GMT
 recorded_with: VCR 3.0.1

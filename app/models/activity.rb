@@ -1,7 +1,7 @@
 class Activity < ActiveRecord::Base
 
   def self.build_activities(activities_hash)
-    activities_hash.each do |activity_hash|
+    activities_hash.map do |activity_hash|
       activity = Activity.find_or_create_by(activity_id: activity_hash[:id])
       activity.activity_id          = activity_hash[:id]
       activity.athlete_id           = activity_hash[:athlete][:id]

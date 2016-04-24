@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :activities, only: [:index, :show]
-  resources :crags, only: [:index]
+  resources :crags, only: [:index, :create]
 
   root 'landings#index'
   get '/auth/strava', as: :strava_login
