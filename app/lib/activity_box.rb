@@ -17,6 +17,6 @@ class ActivityBox
     n = (start_lat + distance)
     w = (start_long + distance)
 
-    [s, e, n, w]
+    [e, s, w, n]
   end
 end
