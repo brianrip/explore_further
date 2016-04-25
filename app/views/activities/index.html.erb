@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="text-center"><%= current_athlete.firstname %>'s recent activities</h1>
+  <h1 class="text-center">Recent activities</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -15,7 +15,7 @@
         <td><%= activity.name %></td>
         <td><%= link_to "View Details",  activity_path(activity[:name]), class: "btn btn-default" %></td>
         <td><%= activity.activity_type %></td>
-        <td><%= link_to "View nearby climbing areas", crags_path(activity[:crag_name]) %></td>
+        <td><%= link_to "View nearby climbing areas", crags_path(activity.id) %></td>
       <% end %>
       </tr>
     </tbody>

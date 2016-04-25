@@ -13,3 +13,4 @@
 /tmp
 # KEYS
 /config/application.yml
+/coverage/* 

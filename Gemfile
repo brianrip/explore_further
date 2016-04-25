@@ -18,6 +18,7 @@ gem 'polylines'
 group :test do
   gem 'webmock'
   gem 'vcr'
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :development, :test do

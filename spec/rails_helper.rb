@@ -13,6 +13,7 @@ ActiveRecord::Migration.maintain_test_schema!
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/cassettes'
   c.hook_into :webmock
+  c.ignore_hosts 'codeclimate.com'
 end
 
 RSpec.configure do |config|
