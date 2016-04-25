@@ -1,9 +1,9 @@
-<div class="container">
-  <div class="col-sm-2">
-    <%= image_tag(current_athlete.profile) %>
+<div class="container-fluid dashboard">
+
+  <div class="col-sm-4">
+    <%= image_tag(current_athlete.profile, height: '200', width: '250') %>
   </div>
   <div class="col-sm-2">
-    <%= current_athlete.email %>
+    <%= link_to "Discover new climbing locations", activities_path, class: "btn btn-default"  %>
   </div>
-    <%= link_to "#{current_athlete.firstname},s Activities", activities_path %>
 </div>

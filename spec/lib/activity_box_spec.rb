@@ -9,7 +9,7 @@ RSpec.describe ActivityBox do
 
       box = ActivityBox.build_box(activity, distance)
 
-      expect(box).to eq([29.99, -100.01, 30.01, -99.99])
+      expect(box).to eq([-100.01, 29.99, -99.99, 30.01])
     end
   end
 end

@@ -8,8 +8,7 @@ RSpec.feature "AthleteLogsInWithStrava", type: :feature do
     visit '/'
     expect(page.status_code).to eq(200)
     find("#login").click
-    expect(page).to have_content "Brian,s Activities"
-    expect(page).to have_content "rippeto@gmail.com"
+    expect(page).to have_content "Discover new climbing locations"
     expect(page).to have_content "Logout"
     expect(current_path).to eq "/dashboard"
   end

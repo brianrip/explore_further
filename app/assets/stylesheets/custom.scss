@@ -2,7 +2,7 @@
   font-family: 'Play', sans-serif;
 }
 
-.container-landing {
+.landing {
   background-image: asset-url('black_and_white_mountain.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -10,6 +10,20 @@
   padding-top: 30vh;
   text-align: center;
 }
+
+.dashboard {
+  background-image: asset-url('granite.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0
+}
+
+
 
 a.navbar-brand.break-through-header {
   color: #FC4C02;

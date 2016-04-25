@@ -6,7 +6,7 @@ describe ActivityService do
         activity_service = ActivityService.new(token)
         all_activities = activity_service.activities
         activity = all_activities.first
-        expect(activity[:name]).to eq("Turing group jog and circuit training")
+        expect(activity[:location_country]).to eq("United States")
         expect(all_activities.count).to eq(30)
       end
     end

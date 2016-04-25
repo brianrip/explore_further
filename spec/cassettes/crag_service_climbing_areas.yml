@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.thecrag.com/api/map/bbox?s=-105.3,39.98,-105.27,40.0
+    uri: http://www.thecrag.com/api/map/bbox?s=-105.3,39.98,-105.27,40.0&t=10
     body:
       encoding: US-ASCII
       string: ''
@@ -21,18 +21,18 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Sat, 23 Apr 2016 19:41:24 GMT
+      - Mon, 25 Apr 2016 19:12:27 GMT
       Server:
       - Apache/2.2
       Vary:
       - Accept-Encoding
       Content-Length:
-      - '110'
+      - '114'
       Content-Type:
       - application/json; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"query":{"request":"bbox","entity":"map","s":"-105.3,39.98,-105.27,40.0"},"data":{"mapto":["14375143"]}}'
+      string: '{"query":{"request":"bbox","entity":"map","s":"-105.3,39.98,-105.27,40.0","t":"10"},"data":{"mapto":["14375143"]}}'
     http_version: 
-  recorded_at: Sat, 23 Apr 2016 19:41:24 GMT
+  recorded_at: Mon, 25 Apr 2016 19:12:28 GMT
 recorded_with: VCR 3.0.1
