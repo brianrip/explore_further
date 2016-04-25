@@ -1,0 +1,21 @@
+<div class="container">
+  <h1 class="text-center">Crags</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Crag name</th>
+        <th>Number of Routes</th>
+        <th>Climbing Styles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @crags.each do |crag| %>
+      <tr>
+        <td><%= crag.name %></td>
+        <td><%= crag.route_quantity %></td>
+        <td><%= crag.climbing_styles %></td>
+      <% end %>
+      </tr>
+    </tbody>
+  </table>
+</div>
