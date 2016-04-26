@@ -1,6 +1,6 @@
 <div class="container">
-  <h1 class="text-center"> <%= @activity[:name] %></h1>
-    <%= button_to "View nearby climbing areas", crags_path, params: { name: @activity[:name] }, class: "btn btn-primary" %>
+  <h1 class="text-center"> <%= @activity.name %></h1>
+    <%= button_to "View nearby climbing areas", crags_path, params: { id: @activity.id }, class: "btn btn-primary" %>
     <%#= form_tag crags_path, method: :get do %>
       <%#= label_tag "Search for climbing areas within" %>
       <%#= text_field_tag "params['distance']" %>

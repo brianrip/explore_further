@@ -13,9 +13,9 @@
       <% @all_activities.each do |activity| %>
       <tr>
         <td><%= activity.name %></td>
-        <td><%= link_to "View Details",  activity_path(activity[:name]), class: "btn btn-default" %></td>
+        <td><%= link_to "View Details",  activity_path(activity.slug), class: "btn btn-default" %></td>
         <td><%= activity.activity_type %></td>
-        <td><%= link_to "View nearby climbing areas", crags_path(activity.id) %></td>
+        <td><%= link_to "View nearby climbing areas", crags_path %></td>
       <% end %>
       </tr>
     </tbody>

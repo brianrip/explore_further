@@ -6,8 +6,7 @@ class ActivitiesController < ApplicationController
   end
 
   def show
-    @activity = activities.find { |activity|
-    activity[:name][params[:id]] }
+    @activity       = Activity.find(params[:id])
     @activity_crags = Crag.where(activity_id: @activity.id)
   end
 end

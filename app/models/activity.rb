@@ -1,4 +1,5 @@
 class Activity < ActiveRecord::Base
+  # before_create :set_slug
 
   def self.build_activities(activities_hash)
     activities_hash.map do |activity_hash|
@@ -19,8 +20,18 @@ class Activity < ActiveRecord::Base
       activity.start_latitude       = activity_hash[:start_latitude]
       activity.start_longitude      = activity_hash[:start_longitude]
       activity.polyline             = activity_hash[:map][:summary_polyline]
+      activity.slug                 = activity.name.parameterize
       activity.save
       activity
     end
+  end
+
+
+  def to_param
+    slug
+  end
+
+  def self.find(input)
+    find_by_slug(input)
   end
 end
