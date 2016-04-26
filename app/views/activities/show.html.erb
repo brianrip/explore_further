@@ -17,14 +17,16 @@
           <th>Crag name</th>
           <th>Number of Routes</th>
           <th>Climbing Styles</th>
+          <th>Add to favorites</th>
         </tr>
       </thead>
       <tbody>
         <% @activity_crags.each do |activity_crag| %>
-        <tr>
+        <tr id=<%= "#{activity_crag.id}" %>>
           <td><%= activity_crag.name %></td>
           <td><%= activity_crag.route_quantity %></td>
           <td><%= activity_crag.climbing_styles %></td>
+          <td id="favorite-crag" class="btn btn-primary">Favorite</td>
         <% end %>
         </tr>
       </tbody>

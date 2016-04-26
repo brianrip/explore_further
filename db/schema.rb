@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160425210700) do
+ActiveRecord::Schema.define(version: 20160426194826) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,9 +54,10 @@ ActiveRecord::Schema.define(version: 20160425210700) do
     t.string   "name"
     t.integer  "route_quantity"
     t.string   "climbing_styles"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.integer  "activity_id"
+    t.boolean  "favorite",        default: false
   end
 
   add_foreign_key "crags", "activities"

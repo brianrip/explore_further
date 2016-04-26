@@ -31,8 +31,6 @@ class Activity < ActiveRecord::Base
     waypoints.map { |lat, lng| { lat: lat, lng: lng } }
   end
 
-
-
   def to_param
     slug
   end

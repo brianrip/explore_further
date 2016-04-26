@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
   resources :activities, only: [:index, :show]
 
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :favorites, only: [:update]
+    end
+  end
+
 
   resources :crags, only: [:index, :create]
 

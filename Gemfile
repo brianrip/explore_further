@@ -14,6 +14,7 @@ gem 'figaro'
 gem 'faraday'
 gem 'omniauth-strava'
 gem 'polylines'
+gem 'responders'
 
 group :test do
   gem 'webmock'
