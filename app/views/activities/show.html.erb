@@ -48,14 +48,13 @@
 </div>
 <br>
 <div class="container">
-
 <%= javascript_tag do %>
   function trailMap() {
 
     var map_options = {
 
       center: new google.maps.LatLng(<%= @activity[:start_latitude] %>, <%= @activity[:start_longitude] %>),
-      zoom: 13,
+      zoom: 12,
       mapTypeId: google.maps.MapTypeId.TERRAIN,
       panControl: false,
       mapTypeControl: false,
@@ -77,6 +76,10 @@
       strokeWeight: 4,
       map: map
     });
+
+    var path = <%= @activity.set_waypoints.to_json.html_safe %>;
+
+    poly.setPath(path);
 
     var rectangle = new google.maps.Rectangle({
         strokeColor: '#FF0000',

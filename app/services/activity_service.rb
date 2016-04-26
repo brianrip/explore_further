@@ -10,4 +10,5 @@ class ActivityService
     JSON.parse(connection.get('athlete/activities').body, symbolize_names: true)
   end
 
+
 end
