@@ -171,6 +171,8 @@
       "/Users/brianrippeto/Turing/3module/projects/explore_further/config/routes.rb": [
         1,
         1,
+        null,
+        null,
         1,
         null,
         1,
@@ -244,12 +246,12 @@
         1,
         null,
         1,
-        25,
+        22,
         null,
         null,
         1,
         null,
-        5,
+        4,
         null,
         null
       ],
@@ -379,6 +381,7 @@
       "/Users/brianrippeto/Turing/3module/projects/explore_further/app/models/activity.rb": [
         1,
         null,
+        null,
         1,
         4,
         120,
@@ -400,7 +403,17 @@
         120,
         120,
         120,
+        120,
         null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -414,11 +427,11 @@
         null,
         1,
         1,
-        14,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1461612166
+    "timestamp": 1461631095
   }
 }
