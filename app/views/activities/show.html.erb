@@ -1,16 +1,65 @@
-<div class="container">
+  <div id="wrapper">
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li>
+          <h4 class="activity-titles">City</h4>
+          <p><%= @activity.location_city %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">State</h4>
+          <p><%= @activity.location_state %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Activity Type</h4>
+          <p><%= @activity.activity_type %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Kudos Given</h4>
+          <p><%= @activity.kudos_count %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Max Speed</h4>
+          <p><%= @activity.max_speed %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Distance</h4>
+          <p><%= @activity.distance %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Moving Time</h4>
+          <p><%= @activity.moving_time %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Elevation Gain</h4>
+          <p><%= @activity.total_elevation_gain %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Start Date</h4>
+          <p><%= @activity.start_date_local %></p>
+        </li>
+        <li>
+          <h4 class="activity-titles">Achievements</h4>
+          <p><%= @activity.achievement_count %></p>
+            <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid col-md-offset-2">
+
   <h1 class="text-center"> <%= @activity.name %></h1>
-    <div class="form-group search-field">
+  <hr>
+    <div class="form-group search-field text-center">
         <%= form_tag crags_path, method: :post, class: "form-inline" do %>
           <%= label_tag "Search for climbing areas within" %>
           <%= text_field_tag "distance" %>
           <%= label_tag "square miles from start location" %>
           <%= hidden_field_tag(:activity_id, @activity.id) %>
-          <%= submit_tag "Explore Further", class: "btn btn-default" %>
+          <%= submit_tag "Explore Further", class: "btn btn-success" %>
         <% end %>
     </div>
-
-    <% if @activity_crags != nil %>
+    <hr>
+    <% if !@activity_crags.empty? %>
     <h1 class="text-center">Nearby Crags</h1>
     <table class="table table-striped">
       <thead>
@@ -33,23 +82,8 @@
       </tbody>
     </table>
     <% end %>
-    <div class="col-md-6">
-      <h4>Location: <%= @activity.location_city %>, <%= @activity.location_state %></h4>
-      <h4>Activity Type: <%= @activity.activity_type %></h4>
-      <h4>Kudos Given: <%= @activity.kudos_count %></h4>
-      <h4>Max Speed: <%= @activity.max_speed %></h4>
-    </div>
-    <div class="col-md-6">
-      <h4>Distance: <%= @activity.distance %></h4>
-      <h4>Moving Time: <%= @activity.moving_time %></h4>
-      <h4>Elevation Gain: <%= @activity.total_elevation_gain %></h4>
-      <h4>Start Date: <%= @activity.start_date_local %></h4>
-      <h4>Strava achievements: <%= @activity.achievement_count %></h4>
-    </div>
-<br>
 </div>
-<br>
-<div class="container">
+<div class="container col-md-offset-2">
 <%= javascript_tag do %>
   function trailMap() {
 
@@ -104,7 +138,7 @@
 async defer></script>
 
 <div class="" style="margin: 20px 10px; height: 575px;">
-  <div id="google-map" style="width: 90%; height: 450px; position: relative; left: 5%; top: 10%;"></div>
+  <div id="google-map" style="width: 77%; height: 400px; position: relative; left: 5%; top: 5%;"></div>
 </div>
 
 </div>
