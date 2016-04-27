@@ -1,9 +1,12 @@
 <div class="container-fluid dashboard">
 
-  <div class="col-sm-4">
+  <div class="col-sm-3 profile-pic">
     <%= image_tag(current_athlete.profile, height: '200', width: '250') %>
   </div>
   <div class="col-sm-2">
     <%= link_to "Discover new climbing locations", activities_path, class: "btn btn-default"  %>
+  </div>
+  <div class="col-md-offset-2 col-sm-2">
+    <%= link_to "View favorite climbing areas", favorite_crags_path, class: "btn btn-default"  %>
   </div>
 </div>

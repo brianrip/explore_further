@@ -1,8 +1,6 @@
 require 'rails_helper'
 include Omnistub
 
-
-
 RSpec.feature 'Athlete views an activity' do
   before(:each) do
     stub_athlete

@@ -3,9 +3,9 @@
     <%= button_to "View nearby climbing areas", crags_path, params: { id: @activity.id }, class: "btn btn-primary" %>
     <%#= form_tag crags_path, method: :get do %>
       <%#= label_tag "Search for climbing areas within" %>
-      <%#= text_field_tag "params['distance']" %>
+      <%#= text_field_tag "params['distance'" %>
       <%#= label_tag "Miles" %>
-      <%#= hidden_field_tag(:activity_id, @activity[:id]) %>
+      <%#= hidden_field_tag(:activity_id, @activity.id) %>
       <%#= hidden_field_tag(:distance, 1) %>
       <%#= submit_tag "Explore Further" %>
     <%# end %>
@@ -33,20 +33,19 @@
     </table>
     <% end %>
     <div class="col-md-6">
-      <h4>Location: <%= @activity[:location_city] %>, <%= @activity[:location_state] %></h4>
-      <h4>Activity Type: <%= @activity[:type] %></h4>
-      <h4>Kudos Given: <%= @activity[:kudos_count] %></h4>
-      <h4>Max Speed: <%= @activity[:max_speed] %></h4>
+      <h4>Location: <%= @activity.location_city %>, <%= @activity.location_state %></h4>
+      <h4>Activity Type: <%= @activity.activity_type %></h4>
+      <h4>Kudos Given: <%= @activity.kudos_count %></h4>
+      <h4>Max Speed: <%= @activity.max_speed %></h4>
     </div>
     <div class="col-md-6">
-      <h4>Distance: <%= @activity[:distance] %></h4>
-      <h4>Moving Time: <%= @activity[:moving_time] %></h4>
-      <h4>Elevation Gain: <%= @activity[:total_elevation_gain] %></h4>
-      <h4>Start Date: <%= @activity[:start_date_local] %></h4>
-      <h4>Strava achievements: <%= @activity[:achievement_count] %></h4>
+      <h4>Distance: <%= @activity.distance %></h4>
+      <h4>Moving Time: <%= @activity.moving_time %></h4>
+      <h4>Elevation Gain: <%= @activity.total_elevation_gain %></h4>
+      <h4>Start Date: <%= @activity.start_date_local %></h4>
+      <h4>Strava achievements: <%= @activity.achievement_count %></h4>
     </div>
 <br>
-<h3 class="text-center"> <%= @activity[:start_latlng] %></h1>
 </div>
 <br>
 <div class="container">
@@ -55,7 +54,7 @@
 
     var map_options = {
 
-      center: new google.maps.LatLng(<%= @activity[:start_latitude] %>, <%= @activity[:start_longitude] %>),
+      center: new google.maps.LatLng(<%= @activity.start_latitude %>, <%= @activity.start_longitude %>),
       zoom: 12,
       mapTypeId: google.maps.MapTypeId.TERRAIN,
       panControl: false,
@@ -66,8 +65,8 @@
     var map = new google.maps.Map(document.getElementById("google-map"), map_options);
 
     var startMarker = new google.maps.Marker({
-      position: { lat: <%= @activity[:start_latitude] %>,
-                  lng: <%= @activity[:start_longitude] %> },
+      position: { lat: <%= @activity.start_latitude %>,
+                  lng: <%= @activity.start_longitude %> },
       map: map,
       label: "+"
     });

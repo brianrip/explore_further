@@ -26,11 +26,12 @@ $(document).ready(function(){
 })
 
 function addToFavorites(activityId) {
+
   $.ajax({
     type: "PUT",
     url: "/api/v1/favorites/" + activityId,
     success: function() {
-      console.log("sent AJAC call to update favorite")
+      console.log("sent AJAX call to update favorite")
     },
     error: function(error) {
       console.log(error.responseText)

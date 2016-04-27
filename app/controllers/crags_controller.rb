@@ -11,7 +11,7 @@ class CragsController < ApplicationController
     area_node = CragService.new.climbing_area(bounding_box)
     crag_data = CragService.new.crag_children(area_node[:data][:mapto].first)
     crags = Crag.build_crag(crag_data)
-    crags.each { |crag| crag.update_attribute(:activity_id, activity.id) }
+    crags.each { |crag| crag.update(activity_id: activity.id, athlete_id: current_athlete.id) }
     redirect_to activity_path(activity.slug)
   end
 end

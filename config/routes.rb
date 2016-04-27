@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :crags, only: [:index, :create]
 
+  resources :favorite_crags, only: [:index]
+
   root 'landings#index'
   get '/auth/strava', as: :strava_login
   get '/auth/strava/callback', to: "sessions#create"

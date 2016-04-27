@@ -1,8 +1,6 @@
 require 'rails_helper'
 include Omnistub
 
-
-
 RSpec.feature 'Athlete views crag info' do
   before(:each) do
     stub_athlete
@@ -14,7 +12,6 @@ RSpec.feature 'Athlete views crag info' do
     visit activities_path
     expect(page).to have_content("View nearby climbing areas")
     find('tr', text: "Always fun").click_link("View nearby climbing areas")
-
     end
   end
 end
