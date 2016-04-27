@@ -13971,13 +13971,11 @@ return jQuery;
 
 
 $(document).ready(function(){
-  $("#favorite-crag").on("click", function(event) {
+  $(".favorite-crag").on("click", function(event) {
     event.preventDefault();
     activityId = $(this).parent().attr('id')
-    console.log(activityId)
-
+    $('#favorited-' + activityId).removeClass("hide")
     addToFavorites(activityId)
-
   });
 })
 

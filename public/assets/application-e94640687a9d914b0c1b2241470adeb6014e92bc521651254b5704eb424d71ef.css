@@ -8848,3 +8848,150 @@ a.navbar-brand.break-through-header {
 .profile-pic img {
   border-radius: 20px;
 }
+
+/* line 40, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+.hide {
+  display: none;
+}
+
+/* line 1, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 9, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#wrapper.toggled {
+  padding-left: 165px;
+}
+
+/* line 13, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 165px;
+  width: 0;
+  height: 100%;
+  margin-left: -165px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* line 28, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#wrapper.toggled #sidebar-wrapper {
+  width: 165px;
+}
+
+/* line 32, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#page-content-wrapper {
+  width: 100%;
+  position: absolute;
+  padding: 15px;
+}
+
+/* line 38, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+#wrapper.toggled #page-content-wrapper {
+  position: absolute;
+  margin-right: -165px;
+}
+
+/* Sidebar Styles */
+/* line 45, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+h4.activity-titles {
+  color: #FC4C02;
+}
+
+/* line 49, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 165px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 58, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+/* line 63, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav li p {
+  display: block;
+  text-decoration: none;
+  color: #999999;
+}
+
+/* line 69, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav li p:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 75, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav li p:active,
+.sidebar-nav li p:focus {
+  text-decoration: none;
+}
+
+/* line 80, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+/* line 86, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav > .sidebar-brand p {
+  color: #999999;
+}
+
+/* line 90, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+.sidebar-nav > .sidebar-brand p:hover {
+  color: #fff;
+  background: none;
+}
+
+@media (min-width: 768px) {
+  /* line 96, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #wrapper {
+    padding-left: 165px;
+  }
+
+  /* line 100, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #wrapper.toggled {
+    padding-left: 0;
+  }
+
+  /* line 104, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #sidebar-wrapper {
+    width: 165px;
+  }
+
+  /* line 108, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #wrapper.toggled #sidebar-wrapper {
+    width: 0;
+  }
+
+  /* line 112, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
+
+  /* line 117, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/side_bar.scss */
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
+}
