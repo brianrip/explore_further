@@ -15,6 +15,7 @@ RSpec.feature 'Athlete favorites a crag' do
 
       click_on "View nearby climbing areas"
       expect(page).to have_content("Favorite")
+  save_and_open_page
     end
   end
 end
