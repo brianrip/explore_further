@@ -1,14 +1,15 @@
 <div class="container">
   <h1 class="text-center"> <%= @activity.name %></h1>
-    <%= button_to "View nearby climbing areas", crags_path, params: { id: @activity.id }, class: "btn btn-primary" %>
-    <%#= form_tag crags_path, method: :get do %>
-      <%#= label_tag "Search for climbing areas within" %>
-      <%#= text_field_tag "params['distance'" %>
-      <%#= label_tag "Miles" %>
-      <%#= hidden_field_tag(:activity_id, @activity.id) %>
-      <%#= hidden_field_tag(:distance, 1) %>
-      <%#= submit_tag "Explore Further" %>
-    <%# end %>
+    <div class="form-group search-field">
+        <%= form_tag crags_path, method: :post, class: "form-inline" do %>
+          <%= label_tag "Search for climbing areas within" %>
+          <%= text_field_tag "distance" %>
+          <%= label_tag "square miles from start location" %>
+          <%= hidden_field_tag(:activity_id, @activity.id) %>
+          <%= submit_tag "Explore Further", class: "btn btn-default" %>
+        <% end %>
+    </div>
+
     <% if @activity_crags != nil %>
     <h1 class="text-center">Nearby Crags</h1>
     <table class="table table-striped">

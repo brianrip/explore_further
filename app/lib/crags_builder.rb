@@ -1,7 +1,7 @@
 class CragsBuilder
 
   def self.build_crags(activity, distance, athlete_id)
-    bounding_box = ActivityBox.build_box(activity, distance)
+    bounding_box = ActivityBox.build_box(activity, distance.to_f)
     area_node = CragService.new.climbing_area(bounding_box)
     crag_data = CragService.new.crag_children(area_node[:data][:mapto].first)
     crags = Crag.build_crag(crag_data)
