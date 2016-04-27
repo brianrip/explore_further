@@ -8810,7 +8810,7 @@ button.close {
 }
 
 /* line 5, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
-.container-landing {
+.landing {
   background-image: url(/assets/black_and_white_mountain-5fce234e9f58bb48f176a49911f330d5808899823813075720b3a1e6723fd312.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -8820,12 +8820,31 @@ button.close {
 }
 
 /* line 14, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+.dashboard {
+  background-image: url(/assets/granite-2842002172b93682966cacf7becfe1a204259f7d4eb188c1e51e6b2284ac5c7c.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 20vh;
+  text-align: center;
+}
+
+/* line 22, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 28, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 a.navbar-brand.break-through-header {
   color: #FC4C02;
 }
 
-/* line 17, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 31, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .break-through-header {
   color: #FC4C02;
   background-color: #fff;
+}
+
+/* line 36, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+.profile-pic img {
+  border-radius: 20px;
 }
