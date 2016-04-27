@@ -12,6 +12,8 @@
   <% if !current_page?(root_path) %>
     <%= render partial: "partials/navbar" %>
   <% end %>
+  <div class="container flash">
+</div>
 <%= yield %>
 <%= javascript_include_tag 'application' %>
 </body>

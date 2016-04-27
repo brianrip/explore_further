@@ -76,8 +76,14 @@
           <td><%= activity_crag.name %></td>
           <td><%= activity_crag.route_quantity %></td>
           <td><%= activity_crag.climbing_styles %></td>
-          <td id="favorite-crag" class="btn btn-default">Favorite</td>
+          <td class="btn btn-default favorite-crag">Favorite</td>
+          <% if activity_crag.favorite %>
+            <td>Love it</td>
+            <% else %>
+            <td id=<%= "favorited-#{activity_crag.id}" %> class="hide">Love it</td>
+          <% end %>
         <% end %>
+
         </tr>
       </tbody>
     </table>
