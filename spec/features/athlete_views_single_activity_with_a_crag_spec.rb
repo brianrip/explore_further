@@ -10,12 +10,11 @@ RSpec.feature 'Athlete views an activity' do
     visit '/'
     find('#login').click
     visit activities_path
-    expect(page).to have_content("View nearby climbing areas")
-    find('tr', text: "Always fun").click_link("View Details")
+    find('tr', text: "Always fun").click_on("Find climbing areas near activity")
 
-    expect(page).to have_content("Boulder, Colorado")
+    expect(page).to have_content("Boulder")
     expect(page).to have_content("Always fun")
-    expect(page).to have_content("Kudos Given: 4")
+    expect(page).to have_content("Kudos Given")
     end
   end
 end

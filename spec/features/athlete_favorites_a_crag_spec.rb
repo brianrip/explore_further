@@ -10,12 +10,15 @@ RSpec.feature 'Athlete favorites a crag' do
       visit '/'
       find('#login').click
       visit activities_path
-      expect(page).to have_content("View nearby climbing areas")
-      find('tr', text: "Always fun").click_link("View Details")
-
-      click_on "View nearby climbing areas"
-      expect(page).to have_content("Favorite")
-  save_and_open_page
+      expect(page).to have_content("Find climbing areas near activity")
+      find('tr', text: "Always fun").click_link("Find climbing areas near activity")
+      fill_in "distance", with: 1
+      click_on "Explore"
+      expect(page).to have_content("Boulder")
+      expect(page).to have_content("Colorado")
+      expect(page).to have_content("Ride")
+      expect(page).to have_content("4")
+      expect(page).to have_content("Rock Island 2")
     end
   end
 end

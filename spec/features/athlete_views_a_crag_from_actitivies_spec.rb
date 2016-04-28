@@ -10,8 +10,8 @@ RSpec.feature 'Athlete views crag info' do
     visit '/'
     find('#login').click
     visit activities_path
-    expect(page).to have_content("View nearby climbing areas")
-    find('tr', text: "Always fun").click_link("View nearby climbing areas")
+    expect(page).to have_content("Find climbing areas near activity")
+    find('tr', text: "Always fun").click_link("Find climbing areas near activity")
     end
   end
 end
