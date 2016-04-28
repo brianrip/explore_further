@@ -25,11 +25,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 28 Apr 2016 05:56:15 GMT
+      - Thu, 28 Apr 2016 05:55:57 GMT
       Etag:
       - W/"57c9b0c891d36a916fe61586e2d08a7f"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTBlMDZlNzU4MDFjM2E2ZTFkOWU4NDgxMWEzZjhhZmI1BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a59ee1afee5ac5db8f8629dce6e6eeb5d1efe06e;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRjNWRkOGZmMjdkYWRmN2Y5NjNiZGE3YWE4NjNiZDVlBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a717556626c13a03bf25a051ba42c943818b9c4f;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
@@ -40,9 +40,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '29,155'
+      - '20,146'
       X-Request-Id:
-      - f1e7334ea9d7a6df952ff37e0695b29a
+      - eaef329fb74a49bfafb613ecbfa8e593
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -143,7 +143,7 @@ http_interactions:
         America/Denver","start_latlng":[38.575585,-109.633853],"end_latlng":[38.576114,-109.634015],"location_city":"Moab","location_state":"Utah","location_country":"United
         States","start_latitude":38.575585,"start_longitude":-109.633853,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a320834690","summary_polyline":"khmjFrzc|S`AoBzGgBpz@qG|b@Sy`BrGn@KaBo@jAyCgJ]ZmF{L_Sy@sJrCsH}BsFp@sCsGnGgF_AUcDlB_KfNvRmC~OjAfGpFpFfDlII~GtJz@qA~DoItFlAdAsAuAXjB}CdA~BkDhCt@}@eAt@bAqBfBxB}AiFxA|AwC{AnCjBRG{C","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":0.58,"max_speed":6.3,"has_heartrate":false,"elev_high":1360.6,"elev_low":1205.3,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 05:56:15 GMT
+  recorded_at: Thu, 28 Apr 2016 05:55:57 GMT
 - request:
     method: get
     uri: https://www.strava.com/api/v3/athlete/activities
@@ -169,11 +169,11 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 28 Apr 2016 05:56:16 GMT
+      - Thu, 28 Apr 2016 05:55:58 GMT
       Etag:
       - W/"57c9b0c891d36a916fe61586e2d08a7f"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWVhZmIzYWFlMjhiNzhmN2QzOGQ1MTg0YWUxMjRmZmJmBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--3b85cc0e07e661503d7001486a026c71bb2b64bb;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWJiM2NjZWNjY2RhOTZmYzEyMjYyNmRlOTUwN2E4NjAwBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--a1c79138ae0b28c89faa91e3aa7fa9d9c6547744;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
@@ -184,9 +184,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '30,156'
+      - '21,147'
       X-Request-Id:
-      - aeff24c27bac0f190a73dfdb2b2a8670
+      - 818729a0881799bad717a077b9d0e08a
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -287,5 +287,5 @@ http_interactions:
         America/Denver","start_latlng":[38.575585,-109.633853],"end_latlng":[38.576114,-109.634015],"location_city":"Moab","location_state":"Utah","location_country":"United
         States","start_latitude":38.575585,"start_longitude":-109.633853,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a320834690","summary_polyline":"khmjFrzc|S`AoBzGgBpz@qG|b@Sy`BrGn@KaBo@jAyCgJ]ZmF{L_Sy@sJrCsH}BsFp@sCsGnGgF_AUcDlB_KfNvRmC~OjAfGpFpFfDlII~GtJz@qA~DoItFlAdAsAuAXjB}CdA~BkDhCt@}@eAt@bAqBfBxB}AiFxA|AwC{AnCjBRG{C","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":0.58,"max_speed":6.3,"has_heartrate":false,"elev_high":1360.6,"elev_low":1205.3,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 05:56:16 GMT
+  recorded_at: Thu, 28 Apr 2016 05:55:58 GMT
 recorded_with: VCR 3.0.1

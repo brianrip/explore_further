@@ -11,8 +11,9 @@ RSpec.feature 'Athlete views crag info' do
     find('#login').click
     visit activities_path
     find('tr', text: "Always fun").click_link("Find climbing areas near activity")
-    find('tr', text: "Bummers Rock").click_link("View route details")
-
+    fill_in "distance", with: 1
+    click_on "Explore"
+    # find('tr', text: "Bummers Rock").click_link("View route details")
     end
   end
 end

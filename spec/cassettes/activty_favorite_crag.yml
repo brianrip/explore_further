@@ -25,24 +25,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 28 Apr 2016 00:51:36 GMT
+      - Thu, 28 Apr 2016 05:56:07 GMT
       Etag:
-      - W/"fc6762b62c30b33946d3876c12f0ba92"
+      - W/"57c9b0c891d36a916fe61586e2d08a7f"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTNjYTMzODY1YTg0ZmMwNGMyNmUzY2RiYTMwNjdmY2ExBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--7e91b37ac58a3ea0f749c3e240328633484f9411;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTE0ZGE5MDIxYWVlOTlkMDM3MjVhMzFjMjI0NThlMTMyBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--0b66525f53ac9c6ee6e12bb1543a335647376d3f;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - 47864a9870df1af1759a3cac6f22704a
+      - a138398c4e888ebd0776f1d6dd38029d
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '17,43'
+      - '22,148'
       X-Request-Id:
-      - 80d03357ac839caea0618af69973bd5a
+      - dbd2aab59bd37efd00769bfc909fed71
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -54,7 +54,7 @@ http_interactions:
       string: '[{"id":558699835,"resource_state":2,"external_id":"B60E0CC5-A11D-40F6-8C79-10F9434B9F4B","upload_id":612303287,"athlete":{"id":6032950,"resource_state":1},"name":"Turing
         group run","distance":3492.7,"moving_time":1519,"elapsed_time":1555,"total_elevation_gain":0.0,"type":"Run","start_date":"2016-04-27T22:43:47Z","start_date_local":"2016-04-27T16:43:47Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.749666,-105.000101],"end_latlng":[39.749672,-105.000362],"location_city":null,"location_state":null,"location_country":"United
-        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
+        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
         much time in the city lately. ","distance":8812.7,"moving_time":3291,"elapsed_time":3352,"total_elevation_gain":141.2,"type":"Run","start_date":"2016-04-25T00:32:40Z","start_date_local":"2016-04-24T18:32:40Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.959916,-105.237202],"end_latlng":[39.960137,-105.236545],"location_city":null,"location_state":null,"location_country":"United
         States","start_latitude":39.959916,"start_longitude":-105.237202,"achievement_count":0,"kudos_count":4,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a556030530","summary_polyline":"mt{rFpciaSvG~DtBnGfUlIvCpGhTtSHvXdDrOAbNpJlHnLbh@kHrEwCvNzCiO~ZyKpEiJtIcA|C{IiCkJ{J_LyOoh@q]og@eVqq@eMmH{IPaMlM}HfMfAx@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.678,"max_speed":6.8,"has_heartrate":false,"elev_high":1792.5,"elev_low":1665.1,"total_photo_count":1,"has_kudoed":false,"workout_type":0},{"id":556004224,"resource_state":2,"external_id":"4D2FA5A5-4D77-4005-B9D5-1ED7D2FF42D7","upload_id":609534082,"athlete":{"id":6032950,"resource_state":1},"name":"Sanitas
@@ -143,7 +143,7 @@ http_interactions:
         America/Denver","start_latlng":[38.575585,-109.633853],"end_latlng":[38.576114,-109.634015],"location_city":"Moab","location_state":"Utah","location_country":"United
         States","start_latitude":38.575585,"start_longitude":-109.633853,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a320834690","summary_polyline":"khmjFrzc|S`AoBzGgBpz@qG|b@Sy`BrGn@KaBo@jAyCgJ]ZmF{L_Sy@sJrCsH}BsFp@sCsGnGgF_AUcDlB_KfNvRmC~OjAfGpFpFfDlII~GtJz@qA~DoItFlAdAsAuAXjB}CdA~BkDhCt@}@eAt@bAqBfBxB}AiFxA|AwC{AnCjBRG{C","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":0.58,"max_speed":6.3,"has_heartrate":false,"elev_high":1360.6,"elev_low":1205.3,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 00:51:36 GMT
+  recorded_at: Thu, 28 Apr 2016 05:56:07 GMT
 - request:
     method: get
     uri: https://www.strava.com/api/v3/athlete/activities
@@ -169,28 +169,28 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 28 Apr 2016 00:51:37 GMT
+      - Thu, 28 Apr 2016 05:56:08 GMT
       Etag:
-      - W/"fc6762b62c30b33946d3876c12f0ba92"
+      - W/"57c9b0c891d36a916fe61586e2d08a7f"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTk5YmFjMTgxM2Y0Y2U0NjY2ZTEyZmM1YWNkODJjZDAyBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--96761558ef4c71530660a6068cbedda1e6bcf401;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJTRmM2Q4ZTA3ZTg2MTg3ZjAyNjQ0ZDVlZGI1MDQ2ZjhkBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--9f74354f9da75477ebaa2adee107afb441ebf831;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - 47864a9870df1af1759a3cac6f22704a
+      - a138398c4e888ebd0776f1d6dd38029d
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '18,44'
+      - '23,149'
       X-Request-Id:
-      - 07909dd2527e48381c5fbd5cf3c04701
+      - debdd078c815aac1f5693bb7adbe5944
       X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Content-Length:
-      - '12100'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
     body:
@@ -198,7 +198,7 @@ http_interactions:
       string: '[{"id":558699835,"resource_state":2,"external_id":"B60E0CC5-A11D-40F6-8C79-10F9434B9F4B","upload_id":612303287,"athlete":{"id":6032950,"resource_state":1},"name":"Turing
         group run","distance":3492.7,"moving_time":1519,"elapsed_time":1555,"total_elevation_gain":0.0,"type":"Run","start_date":"2016-04-27T22:43:47Z","start_date_local":"2016-04-27T16:43:47Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.749666,-105.000101],"end_latlng":[39.749672,-105.000362],"location_city":null,"location_state":null,"location_country":"United
-        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
+        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
         much time in the city lately. ","distance":8812.7,"moving_time":3291,"elapsed_time":3352,"total_elevation_gain":141.2,"type":"Run","start_date":"2016-04-25T00:32:40Z","start_date_local":"2016-04-24T18:32:40Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.959916,-105.237202],"end_latlng":[39.960137,-105.236545],"location_city":null,"location_state":null,"location_country":"United
         States","start_latitude":39.959916,"start_longitude":-105.237202,"achievement_count":0,"kudos_count":4,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a556030530","summary_polyline":"mt{rFpciaSvG~DtBnGfUlIvCpGhTtSHvXdDrOAbNpJlHnLbh@kHrEwCvNzCiO~ZyKpEiJtIcA|C{IiCkJ{J_LyOoh@q]og@eVqq@eMmH{IPaMlM}HfMfAx@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.678,"max_speed":6.8,"has_heartrate":false,"elev_high":1792.5,"elev_low":1665.1,"total_photo_count":1,"has_kudoed":false,"workout_type":0},{"id":556004224,"resource_state":2,"external_id":"4D2FA5A5-4D77-4005-B9D5-1ED7D2FF42D7","upload_id":609534082,"athlete":{"id":6032950,"resource_state":1},"name":"Sanitas
@@ -287,7 +287,7 @@ http_interactions:
         America/Denver","start_latlng":[38.575585,-109.633853],"end_latlng":[38.576114,-109.634015],"location_city":"Moab","location_state":"Utah","location_country":"United
         States","start_latitude":38.575585,"start_longitude":-109.633853,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a320834690","summary_polyline":"khmjFrzc|S`AoBzGgBpz@qG|b@Sy`BrGn@KaBo@jAyCgJ]ZmF{L_Sy@sJrCsH}BsFp@sCsGnGgF_AUcDlB_KfNvRmC~OjAfGpFpFfDlII~GtJz@qA~DoItFlAdAsAuAXjB}CdA~BkDhCt@}@eAt@bAqBfBxB}AiFxA|AwC{AnCjBRG{C","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":0.58,"max_speed":6.3,"has_heartrate":false,"elev_high":1360.6,"elev_low":1205.3,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 00:51:37 GMT
+  recorded_at: Thu, 28 Apr 2016 05:56:08 GMT
 - request:
     method: get
     uri: http://www.thecrag.com/api/map/bbox?a=zoom&s=-105.347782,39.992684000000004,-105.318782,40.021684&t=20
@@ -309,7 +309,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Apr 2016 00:51:37 GMT
+      - Thu, 28 Apr 2016 05:56:09 GMT
       Server:
       - Apache/2.2
       Vary:
@@ -322,7 +322,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: '{"query":{"request":"bbox","entity":"map","a":"zoom","s":"-105.347782,39.992684000000004,-105.318782,40.021684","t":"20"},"data":{"mapto":["14374615"]}}'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 00:51:37 GMT
+  recorded_at: Thu, 28 Apr 2016 05:56:09 GMT
 - request:
     method: get
     uri: http://www.thecrag.com/api/area/id/14374615/children
@@ -344,7 +344,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Apr 2016 00:51:37 GMT
+      - Thu, 28 Apr 2016 05:56:09 GMT
       Server:
       - Apache/2.2
       Vary:
@@ -382,7 +382,7 @@ http_interactions:
         Viewing","styles":[{"style":"Unknown","label":"Unknown","total":2},{"style":"Aid","label":"Aid","total":"1"}],"name":"Casual
         Viewing","numberRoutes":"3","depth":"7","redirectStubs":[],"gbRoutes":[0,0,0,2,0,0],"subType":"Area","gbAscents":[0,0,0,0,0,0],"id":"16611643","type":"area"}]}'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 00:51:37 GMT
+  recorded_at: Thu, 28 Apr 2016 05:56:09 GMT
 - request:
     method: get
     uri: https://www.strava.com/api/v3/athlete/activities
@@ -408,24 +408,24 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Date:
-      - Thu, 28 Apr 2016 00:51:38 GMT
+      - Thu, 28 Apr 2016 05:56:09 GMT
       Etag:
-      - W/"fc6762b62c30b33946d3876c12f0ba92"
+      - W/"57c9b0c891d36a916fe61586e2d08a7f"
       Set-Cookie:
-      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWZkZGI0YTQzYTljZWIzNzQ5ZjJmZTc3NjM4YjY5MTkwBjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--fd9906cbc3162a21480eacad9afdb8b07ac90e2f;
+      - _strava3_session=BAh7B0kiD3Nlc3Npb25faWQGOgZFVEkiJWU3ZDdjMzljMjkzNjVhMTZmZDMyZmQzOTFhMjFhYTE5BjsAVEkiEGNsZWFyX2NsaWNrBjsARlQ%3D--0042777808c1b11c394f888a3273542d5929eaeb;
         domain=strava.com; path=/; HttpOnly
       Status:
       - 200 OK
       Strava-Athlete-Upload-Version:
-      - 47864a9870df1af1759a3cac6f22704a
+      - a138398c4e888ebd0776f1d6dd38029d
       X-Frame-Options:
       - DENY
       X-Ratelimit-Limit:
       - '600,30000'
       X-Ratelimit-Usage:
-      - '19,45'
+      - '24,150'
       X-Request-Id:
-      - b5238e9d207c6a83cdc730bc53ae7602
+      - 58e8ac3723863f4cc6a4545d5ecb7d76
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -437,7 +437,7 @@ http_interactions:
       string: '[{"id":558699835,"resource_state":2,"external_id":"B60E0CC5-A11D-40F6-8C79-10F9434B9F4B","upload_id":612303287,"athlete":{"id":6032950,"resource_state":1},"name":"Turing
         group run","distance":3492.7,"moving_time":1519,"elapsed_time":1555,"total_elevation_gain":0.0,"type":"Run","start_date":"2016-04-27T22:43:47Z","start_date_local":"2016-04-27T16:43:47Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.749666,-105.000101],"end_latlng":[39.749672,-105.000362],"location_city":null,"location_state":null,"location_country":"United
-        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
+        States","start_latitude":39.749666,"start_longitude":-105.000101,"achievement_count":3,"kudos_count":1,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a558699835","summary_polyline":"krrqFtyz_SvDtFnLyDoKzDa\\he@eF`AbAlAi@f@jBfAuBuAvBhAiB{@dBfA_EmIdBoBg@m@|GuFdBcGfPgT","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.299,"max_speed":8.3,"has_heartrate":false,"elev_high":1587.9,"elev_low":1574.6,"total_photo_count":0,"has_kudoed":false,"workout_type":0},{"id":556030530,"resource_state":2,"external_id":"E5F0FEF1-0B8A-4E7B-8B71-77782CA13914","upload_id":609561292,"athlete":{"id":6032950,"resource_state":1},"name":"Too
         much time in the city lately. ","distance":8812.7,"moving_time":3291,"elapsed_time":3352,"total_elevation_gain":141.2,"type":"Run","start_date":"2016-04-25T00:32:40Z","start_date_local":"2016-04-24T18:32:40Z","timezone":"(GMT-07:00)
         America/Denver","start_latlng":[39.959916,-105.237202],"end_latlng":[39.960137,-105.236545],"location_city":null,"location_state":null,"location_country":"United
         States","start_latitude":39.959916,"start_longitude":-105.237202,"achievement_count":0,"kudos_count":4,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a556030530","summary_polyline":"mt{rFpciaSvG~DtBnGfUlIvCpGhTtSHvXdDrOAbNpJlHnLbh@kHrEwCvNzCiO~ZyKpEiJtIcA|C{IiCkJ{J_LyOoh@q]og@eVqq@eMmH{IPaMlM}HfMfAx@","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":2.678,"max_speed":6.8,"has_heartrate":false,"elev_high":1792.5,"elev_low":1665.1,"total_photo_count":1,"has_kudoed":false,"workout_type":0},{"id":556004224,"resource_state":2,"external_id":"4D2FA5A5-4D77-4005-B9D5-1ED7D2FF42D7","upload_id":609534082,"athlete":{"id":6032950,"resource_state":1},"name":"Sanitas
@@ -526,5 +526,5 @@ http_interactions:
         America/Denver","start_latlng":[38.575585,-109.633853],"end_latlng":[38.576114,-109.634015],"location_city":"Moab","location_state":"Utah","location_country":"United
         States","start_latitude":38.575585,"start_longitude":-109.633853,"achievement_count":0,"kudos_count":0,"comment_count":0,"athlete_count":1,"photo_count":0,"map":{"id":"a320834690","summary_polyline":"khmjFrzc|S`AoBzGgBpz@qG|b@Sy`BrGn@KaBo@jAyCgJ]ZmF{L_Sy@sJrCsH}BsFp@sCsGnGgF_AUcDlB_KfNvRmC~OjAfGpFpFfDlII~GtJz@qA~DoItFlAdAsAuAXjB}CdA~BkDhCt@}@eAt@bAqBfBxB}AiFxA|AwC{AnCjBRG{C","resource_state":2},"trainer":false,"commute":false,"manual":false,"private":false,"flagged":false,"gear_id":"g733800","average_speed":0.58,"max_speed":6.3,"has_heartrate":false,"elev_high":1360.6,"elev_low":1205.3,"total_photo_count":0,"has_kudoed":false,"workout_type":null}]'
     http_version: 
-  recorded_at: Thu, 28 Apr 2016 00:51:38 GMT
+  recorded_at: Thu, 28 Apr 2016 05:56:10 GMT
 recorded_with: VCR 3.0.1
