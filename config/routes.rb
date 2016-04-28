@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   end
 
   resources :activities, only: [:index, :show]
-  resources :crags, only: [:index, :create]
+  resources :crags, only: [:index, :create, :update, :destroy]
   resources :favorite_crags, only: [:index]
 end

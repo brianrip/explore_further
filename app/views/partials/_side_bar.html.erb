@@ -1,0 +1,51 @@
+<div id="wrapper">
+  <div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <% if @activity.location_city != nil %>
+      <li>
+        <h4 class="activity-titles">City</h4>
+        <p><%= @activity.location_city %></p>
+      </li>
+      <% end %>
+      <% if @activity.location_state != nil %>
+      <li>
+        <h4 class="activity-titles">State</h4>
+        <p><%= @activity.location_state %></p>
+      </li>
+      <% end %>
+      <li>
+        <h4 class="activity-titles">Activity Type</h4>
+        <p><%= @activity.activity_type %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Kudos Given</h4>
+        <p><%= @activity.kudos_count %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Max Speed</h4>
+        <p><%= @activity.max_speed %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Distance</h4>
+        <p><%= @activity.distance %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Moving Time</h4>
+        <p><%= @activity.moving_time %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Elevation Gain</h4>
+        <p><%= @activity.total_elevation_gain %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Start Date</h4>
+        <p><%= @activity.start_date_local %></p>
+      </li>
+      <li>
+        <h4 class="activity-titles">Achievements</h4>
+        <p><%= @activity.achievement_count %></p>
+          <a href="#">Contact</a>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<hr>
+<div class="form-group search-field text-center">
+    <%= form_tag crags_path, method: :post, class: "form-inline" do %>
+      <%= label_tag "Search for climbing areas within" %>
+      <%= text_field_tag "distance" %>
+      <%= label_tag "square miles from start location" %>
+      <%= hidden_field_tag(:activity_id, @activity.id) %>
+      <%= submit_tag "Explore", class: "btn btn-success" %>
+    <% end %>
+</div>
+<hr>

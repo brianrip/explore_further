@@ -12,4 +12,12 @@ class CragsController < ApplicationController
 
     redirect_to activity_path(activity.slug)
   end
+
+  def destroy
+    activity_id = Activity.find(params[:id]).id
+    crags = Crag.where("activity_id = ? AND favorite = ?", activity_id, false)
+    crags.each { |crag| crag.destroy}
+
+    redirect_to activity_path(activity_id)
+  end
 end

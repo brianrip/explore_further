@@ -1,70 +1,10 @@
-  <div id="wrapper">
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <% if @activity.location_city != nil %>
-        <li>
-          <h4 class="activity-titles">City</h4>
-          <p><%= @activity.location_city %></p>
-        </li>
-        <% end %>
-        <% if @activity.location_state != nil %>
-        <li>
-          <h4 class="activity-titles">State</h4>
-          <p><%= @activity.location_state %></p>
-        </li>
-        <% end %>
-        <li>
-          <h4 class="activity-titles">Activity Type</h4>
-          <p><%= @activity.activity_type %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Kudos Given</h4>
-          <p><%= @activity.kudos_count %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Max Speed</h4>
-          <p><%= @activity.max_speed %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Distance</h4>
-          <p><%= @activity.distance %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Moving Time</h4>
-          <p><%= @activity.moving_time %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Elevation Gain</h4>
-          <p><%= @activity.total_elevation_gain %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Start Date</h4>
-          <p><%= @activity.start_date_local %></p>
-        </li>
-        <li>
-          <h4 class="activity-titles">Achievements</h4>
-          <p><%= @activity.achievement_count %></p>
-            <a href="#">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div class="container-fluid col-md-offset-2">
-
+<%= render partial: "partials/side_bar" %>
+<div class="container-fluid col-md-offset-2">
   <h1 class="text-center"> <%= @activity.name %></h1>
-  <hr>
-    <div class="form-group search-field text-center">
-        <%= form_tag crags_path, method: :post, class: "form-inline" do %>
-          <%= label_tag "Search for climbing areas within" %>
-          <%= text_field_tag "distance" %>
-          <%= label_tag "square miles from start location" %>
-          <%= hidden_field_tag(:activity_id, @activity.id) %>
-          <%= submit_tag "Explore", class: "btn btn-warning" %>
-        <% end %>
-    </div>
-    <hr>
-    <% if !@activity_crags.empty? %>
+  <%= render partial: "partials/crag_search" %>
+  <% if !@activity_crags.empty? %>
     <h1 class="text-center">Nearby Crags</h1>
+    <%= link_to "Clear crags", crag_path, method: :delete, params: { activity_id: @activity.id }, class: "btn btn-danger" %>
     <table class="table table-striped">
       <thead>
         <tr>
@@ -89,68 +29,11 @@
             <td id=<%= "favorited-#{activity_crag.id}" %> class="hide glyphicon glyphicon-heart"></td>
           <% end %>
         <% end %>
-
         </tr>
       </tbody>
     </table>
-    <% end %>
+  <% end %>
 </div>
 <div class="container col-md-offset-2">
-<%= javascript_tag do %>
-  function trailMap() {
-
-    var map_options = {
-
-      center: new google.maps.LatLng(<%= @activity.start_latitude %>, <%= @activity.start_longitude %>),
-      zoom: 12,
-      mapTypeId: google.maps.MapTypeId.TERRAIN,
-      panControl: false,
-      mapTypeControl: false,
-      zoomControlOptions: { position: google.maps.ControlPosition.LEFT_CENTER }
-    };
-
-    var map = new google.maps.Map(document.getElementById("google-map"), map_options);
-
-    var startMarker = new google.maps.Marker({
-      position: { lat: <%= @activity.start_latitude %>,
-                  lng: <%= @activity.start_longitude %> },
-      map: map,
-      label: "+"
-    });
-
-    var poly = new google.maps.Polyline({
-      geodesic: true,
-      strokeColor: "#EB7001",
-      strokeWeight: 4,
-      map: map
-    });
-
-    var path = <%= @activity.set_waypoints.to_json.html_safe %>;
-
-    poly.setPath(path);
-
-    var rectangle = new google.maps.Rectangle({
-        strokeColor: '#FF0000',
-        strokeOpacity: 0.8,
-        strokeWeight: 2,
-        fillColor: '#FF0000',
-        fillOpacity: 0.35,
-        map: map,
-        bounds: {
-          north: 40.001759,
-          south: 40.021758999999996,
-          east: -105.275537,
-          west: -105.29553700000001
-        }
-      });
-  };
-<% end %>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS'] %>&callback=trailMap"
-async defer></script>
-
-<div class="" style="margin: 20px 10px; height: 575px;">
-  <div id="google-map" style="width: 77%; height: 400px; position: relative; left: 5%; top: 5%;"></div>
-</div>
-
+  <%= render partial: "partials/map" %>
 </div>

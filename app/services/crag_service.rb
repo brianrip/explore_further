@@ -10,6 +10,6 @@ class CragService
   end
 
   def crag_children(area_node)
-    JSON.parse(connection.get("area/id/#{area_node}/children").body, symbolize_names: true)
+    crag_data = JSON.parse(connection.get("area/id/#{area_node}/children").body, symbolize_names: true)
   end
 end
