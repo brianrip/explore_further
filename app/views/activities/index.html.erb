@@ -1,23 +1,25 @@
 <div class="container">
-  <h1 class="text-center">Recent activities</h1>
+  <h1 class="text-center">View your activity to explore further</h1>
   <table class="table table-striped">
     <thead>
       <tr>
         <th>Activity name</th>
+        <th>Location</th>
         <th>Details</th>
         <th>Activity type</th>
-        <th>Nearby Climbing Areas</th>
       </tr>
     </thead>
     <tbody>
       <% @all_activities.each do |activity| %>
+      <% if activity.location_state %>
       <tr>
-        <td><%= activity.name %></td>
-        <td><%= link_to "View Details",  activity_path(activity.slug), class: "btn btn-default" %></td>
+        <td><%= link_to "#{activity.name}", activity_path(activity.slug), class: "btn btn-default" %></td>
+        <td><%= activity.location_city %> <%= activity.location_state %></td>
+        <td><%= link_to "View Details and find nearby crags",  activity_path(activity.slug), class: "btn btn-default" %></td>
         <td><%= activity.activity_type %></td>
-        <td><%= link_to "View nearby climbing areas", crags_path %></td>
       <% end %>
       </tr>
+      <% end %>
     </tbody>
   </table>
 </div>
