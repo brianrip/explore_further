@@ -8810,6 +8810,12 @@ button.close {
 }
 
 /* line 5, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+body {
+  margin: 0;
+  margin-top: 50px;
+}
+
+/* line 9, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .landing {
   background-image: url(/assets/black_and_white_mountain-5fce234e9f58bb48f176a49911f330d5808899823813075720b3a1e6723fd312.jpg);
   background-size: cover;
@@ -8819,7 +8825,7 @@ button.close {
   text-align: center;
 }
 
-/* line 14, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 18, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .dashboard {
   background-image: url(/assets/granite-2842002172b93682966cacf7becfe1a204259f7d4eb188c1e51e6b2284ac5c7c.jpg);
   background-size: cover;
@@ -8828,28 +8834,33 @@ button.close {
   text-align: center;
 }
 
-/* line 22, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 26, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 20;
 }
 
-/* line 28, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 30, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+.stay_put {
+  position: fixed;
+}
+
+/* line 36, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 a.navbar-brand.break-through-header {
   color: #FC4C02;
 }
 
-/* line 31, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 39, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .break-through-header {
   color: #FC4C02;
   background-color: #fff;
 }
 
-/* line 36, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 44, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .profile-pic img {
   border-radius: 20px;
 }
 
-/* line 40, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
+/* line 48, /Users/brianrippeto/Turing/3module/projects/explore_further/app/assets/stylesheets/custom.scss */
 .hide {
   display: none;
 }
