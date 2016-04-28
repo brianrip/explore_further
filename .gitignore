@@ -13,4 +13,7 @@
 /tmp
 # KEYS
 /config/application.yml
-/coverage/* 
+
+#test coverage
+/coverage/*
+/coverage
