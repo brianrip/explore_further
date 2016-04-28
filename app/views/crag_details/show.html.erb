@@ -1,0 +1,41 @@
+<div class="container">
+<% if @crag_children[:data].first.has_key?(:grade) %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Within Area</th>
+      <th>Grade and Name of Route</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @crag_children[:data].each do |crag| %>
+    <tr>
+      <td><%= crag[:urlAncestorStub] %></td>
+      <td><%= crag[:name] %></td>
+    <% end %>
+    </tr>
+  </tbody>
+</table>
+<% else %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Crag name</th>
+      <th>Number of Routes</th>
+      <th>Climbing Styles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @crag_children[:data].each do |crag| %>
+    <tr>
+      <td><%= crag[:name] %></td>
+      <td><%= crag[:numberRoutes] %></td>
+      <% if crag.has_key?(:styles) %>
+        <td><%= crag[:styles].first[:style] %></td>
+      <% end %>
+    <% end %>
+    </tr>
+  </tbody>
+</table>
+<% end %>
+</div>

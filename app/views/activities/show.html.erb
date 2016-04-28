@@ -11,6 +11,7 @@
           <th>Crag name</th>
           <th>Number of Routes</th>
           <th>Climbing Styles</th>
+          <th>Details</th>
           <th>Add to favorites</th>
         </tr>
       </thead>
@@ -20,6 +21,7 @@
           <td><%= activity_crag.name %></td>
           <td><%= activity_crag.route_quantity %></td>
           <td><%= activity_crag.climbing_styles %></td>
+          <td><%= link_to "View details", crag_detail_path(activity_crag.id) %></td>
           <% if !activity_crag.favorite %>
             <td class="btn btn-default favorite-crag">Favorite</td>
           <% end %>

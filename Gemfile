@@ -20,7 +20,6 @@ group :test do
   gem 'webmock'
   gem 'vcr'
   gem "codeclimate-test-reporter", require: nil
-  gem 'simplecov', :require => false
 end
 
 group :development, :test do
