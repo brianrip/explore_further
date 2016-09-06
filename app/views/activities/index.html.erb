@@ -10,7 +10,7 @@
       </tr>
     </thead>
     <tbody>
-      <% @all_activities.each do |activity| %>
+      <% @sorted_activities.each do |activity| %>
       <tr>
         <td><%= link_to "#{activity.name}", activity_path(activity.slug), class: "btn btn-default" %></td>
         <td><%= activity.location_city %> <%= activity.location_state %></td>
