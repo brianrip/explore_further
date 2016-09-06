@@ -1,5 +1,4 @@
 class Activity < ActiveRecord::Base
-  # before_create :set_slug
 
   def self.build_activities(activities_hash)
     activities_hash.map do |activity_hash|
