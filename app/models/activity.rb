@@ -37,4 +37,8 @@ class Activity < ActiveRecord::Base
   def self.find(input)
     find_by_slug(input)
   end
+
+  def self.sort_most_recent(activities)
+    activities.sort_by {|activity| activity.start_date_local }.reverse
+  end
 end
