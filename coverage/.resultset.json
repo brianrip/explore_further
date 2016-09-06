@@ -352,8 +352,6 @@
         1,
         12,
         null,
-        null,
-        null,
         null
       ],
       "/Users/brianrippeto/Turing/3module/projects/explore_further/app/controllers/landings_controller.rb": [
@@ -481,6 +479,6 @@
         null
       ]
     },
-    "timestamp": 1461861643
+    "timestamp": 1473188956
   }
 }
