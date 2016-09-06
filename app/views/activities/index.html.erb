@@ -11,13 +11,13 @@
     </thead>
     <tbody>
       <% @all_activities.each do |activity| %>
-      <% if activity.location_state %>
+      <%# if activity.location_state %>
       <tr>
         <td><%= link_to "#{activity.name}", activity_path(activity.slug), class: "btn btn-default" %></td>
         <td><%= activity.location_city %> <%= activity.location_state %></td>
         <td><%= link_to "Find climbing areas near activity",  activity_path(activity.slug), class: "btn btn-default" %></td>
         <td><%= activity.activity_type %></td>
-      <% end %>
+      <%# end %>
       </tr>
       <% end %>
     </tbody>
